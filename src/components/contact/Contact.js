@@ -34,63 +34,65 @@ const Contact = () => {
 
   return (
     <div className="c">
-      <div className="c-bg"></div>
-      <div className="c-wrapper">
-        <div className="c-left">
-          <h1 className="c-title">Let's connect</h1>
-          <div className="c-info">
-            <div className="c-info-item">
-              <img src={Phone} alt="" className="c-icon" />
-              +91 7507002561
-            </div>
-            <div className="c-info-item">
-              <img className="c-icon" src={Email} alt="" />
-              vijaymore25890@gmail.com
-            </div>
-            <div className="c-info-item">
-              <img className="c-icon" src={Address} alt="" />
-              Kavathe Mahankal,Sangli 416-405,India
+      <div className="hh">
+        <div className="c-bg"></div>
+        <div className="c-wrapper">
+          <div className="c-left">
+            <h1 className="c-title">Let's connect</h1>
+            <div className="c-info">
+              <div className="c-info-item">
+                <img src={Phone} alt="" className="c-icon" />
+                +91 7507002561
+              </div>
+              <div className="c-info-item">
+                <img className="c-icon" src={Email} alt="" />
+                vijaymore25890@gmail.com
+              </div>
+              <div className="c-info-item">
+                <img className="c-icon" src={Address} alt="" />
+                Kavathe Mahankal,Sangli 416-405,India
+              </div>
             </div>
           </div>
+          <div className="c-right">
+            <p className="c-desc">
+              <b>What’s your story?</b> Get in touch. Always available.
+            </p>
+            <form className="txt" ref={formRef} onSubmit={handleSubmit}>
+              <input
+                //   style={{ backgroundColor: darkMode && "#333" }}
+                type="text"
+                placeholder="Name"
+                name="user_name"
+              />
+              <br />
+              <input
+                //   style={{ backgroundColor: darkMode && "#333" }}
+                type="text"
+                placeholder="Subject"
+                name="user_subject"
+              />
+              <br />
+              <input
+                //   style={{ backgroundColor: darkMode && "#333" }}
+                type="text"
+                placeholder="Email"
+                name="user_email"
+              />
+              <textarea
+                //   style={{ backgroundColor: darkMode && "#333" }}
+                rows="5"
+                placeholder="Message"
+                name="message"
+              />
+              <button>Submit</button>
+              {done && "Thank you..."}
+            </form>
+          </div>
         </div>
-        <div className="c-right">
-          <p className="c-desc">
-            <b>What’s your story?</b> Get in touch. Always available.
-          </p>
-          <form className="txt" ref={formRef} onSubmit={handleSubmit}>
-            <input
-              //   style={{ backgroundColor: darkMode && "#333" }}
-              type="text"
-              placeholder="Name"
-              name="user_name"
-            />
-            <br />
-            <input
-              //   style={{ backgroundColor: darkMode && "#333" }}
-              type="text"
-              placeholder="Subject"
-              name="user_subject"
-            />
-            <br />
-            <input
-              //   style={{ backgroundColor: darkMode && "#333" }}
-              type="text"
-              placeholder="Email"
-              name="user_email"
-            />
-            <textarea
-              //   style={{ backgroundColor: darkMode && "#333" }}
-              rows="5"
-              placeholder="Message"
-              name="message"
-            />
-            <button>Submit</button>
-            {done && "Thank you..."}
-          </form>
-        </div>
-      </div>
-      <div className="footer">
+        {/* <div className="footer">
         <p className="footerT">Created by Vijay More @2022</p>
+      </div> */}
       </div>
     </div>
   );
