@@ -1,0 +1,40 @@
+.gapCard {
+  gap: 15px;
+  display: flex;
+}
+
+.h {
+  height: 100vh;
+  text-align: center;
+  background-color: rgb(162, 204, 134);
+}
+
+.heading {
+  margin: 25px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.txtFooter {
+  font-weight: bold;
+}
+
+.marginLeft {
+  margin-left: 20px;
+  box-shadow: 5px 5px 5px gray;
+  height: 500px;
+}
+
+.marginRight {
+  margin-right: 20px;
+  margin-top: 50px;
+  height: 500px;
+  box-shadow: 5px 5px 5px gray;
+}
+
+.margin {
+  margin-left: -20px !important;
+  box-shadow: 5px 5px 5px gray;
+  height: 500px;
+  margin-right: 20px;
+}
